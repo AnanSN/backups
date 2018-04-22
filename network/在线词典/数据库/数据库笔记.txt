@@ -1,0 +1,61 @@
+手动创建数据库
+
+说明：
+   1. 语句以 ";"结束;
+   2. 系统命令以"."开始，不需要加分号
+
+sudo apt-get install sqlite3
+
+1. 创建数据库
+	sqlite3 my.db
+不存在则创建；存在则打开。
+
+2. 显示帮助信息
+	.help
+
+3. 退出数据库
+	.quit
+	.exit
+
+4.显示当前打开的数据库文件
+	.database 
+
+5.显示数据库中的所有表名
+	.tables
+
+6. 查看表的结构
+	.schema  <table_name>
+
+7. 创建新表
+	create table <table_name>(f1 type,f2 type,……)；
+
+8. 删除一个表
+	drop table <table_name>；
+
+9.向表中添加新记录(行)
+	insert into <table_name> values(value1,value2,……)；
+
+10.按指定条件删除表中记录
+	delete from <table_name> where <expression>；
+
+11.查询表中所有记录
+	select * from <table_name>；
+
+12.按指定条件查询表中记录
+	select * from <table_name> where <expression>；
+
+13.更新表中记录(更改)
+	update <table_name> set <f1=value1>，<f2=value2>，…… where <expression>；
+
+14.在表中添加字段(列)
+	alter table <table_name> add column <field> <type>；
+
+15.没有直接删除字段的命令
+可以通过以下步骤实现：
+	第一步：搜索所有的记录，把记录全部复制；
+	第二步：新建一个表（此表没有要删除的列）；
+	第三步：把所有记录插入新建的表中；
+	第四步：删除原有的表。
+	
+
+
