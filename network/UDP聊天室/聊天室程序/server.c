@@ -110,8 +110,8 @@ linklist linklist_create(void)
 void process_login(int sockfd, linklist H, MSG *msg, struct sockaddr_in *client_addr)
 {
 	sprintf(msg->text, "%s login",msg->name);
-	linklist p = H->next,
-			 new = (linklist)malloc(sizeof(listnode));
+	linklist p = H->next, 
+             new = (linklist)malloc(sizeof(listnode));
 	new->addr = *client_addr;
 
 	while(NULL != p){
