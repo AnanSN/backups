@@ -1,0 +1,12 @@
+ASCII
+American Standard Code for Information Interchange
+美国信息交换标准代码
+基于拉丁字母
+主要显示现代英语和其他西欧语言
+单字节编码系统
+等同于国际标准ISO/IEC 646
+0～31及127(共33个)是控制字符或通信专用字符
+
+
+扩展ASCII
+

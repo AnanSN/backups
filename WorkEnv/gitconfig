@@ -1,0 +1,18 @@
+[user]
+	name = shaonan0714
+	email = shaonan0714@thundersoft.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+	pager = less -x1,5
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	mg = merge
+	ci = commit
+[commit]
+    template = ~/.gitlog.template
+[http]
+	postBuffer = 524288000
